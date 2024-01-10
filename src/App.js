@@ -33,10 +33,23 @@ function LoadCountries(){
       <h3>Available Countries: {countries.length}</h3>
       {
         // countries.map(country => console.log(country))
-        countries.map(country => <p>{country.name.common}</p>)
+        // countries.map(country => <p{country.name.common}></p>)
+        countries.map(country => <Country name={country.name.common}></Country>)
       }
     </div>
   )
 }
+
+/**
+ Eka dhik component
+ */
+
+ function Country(props){
+  return (
+    <div>
+      <h2>Name: {props.name}</h2>
+    </div>
+  )
+ }
 
 export default App;
