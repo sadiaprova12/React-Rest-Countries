@@ -3,10 +3,12 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Contries from './components/Contries/Contries';
 import Person from './components/Person/Person';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
      <Contries></Contries>
      <Person></Person>
     </div>
