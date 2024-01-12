@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Contries from './components/Contries/Contries';
+import Person from './components/Person/Person';
 
 function App() {
   return (
     <div className="App">
      <Contries></Contries>
+     <Person></Person>
     </div>
   );
 }
